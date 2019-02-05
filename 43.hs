@@ -1,24 +1,30 @@
 import qualified Data.Set as Set
+import qualified Data.List
 
 no = 1406357289
 
-toDigit :: Int -> [Int]
-toDigit = map (read . (:[])) . show
+digit :: Int -> [Int]
+digit = map (read . (: [])) . show
 
 pan :: Int -> Bool
-pan n = length (toDigit n) == length set
-  where set = Set.fromList (toDigit n)
+pan n = Data.List.sort (digit n) == [0..9]
 
-slice :: Int -> [Int] -> [Int]
-slice n xs = take (n + 2 - n + 1) (drop n $ toDigit no)
+slice from = take ((from + 2) - from + 1) (drop from (digit no))
 
-prime = [2, 3, 5, 7, 11, 13, 17]
+int :: [Int] -> Int
+int = foldl add 0
+   where add num d = 10 * num + d
 
-toInt :: [Int] -> Int
-toInt = foldl addDigit 0
-   where addDigit num d = 10 * num + d
+prime n = null [
+	x |
+	x <- [2..n `div` 2],
+	n `mod` x == 0
+	]
 
-isDiv :: Int -> Int
-isDiv n = (toInt $ slice (n - 1) $ toDigit no) `mod` prime !! (n - 2)
+prop n = (int (slice n)) `mod` ([
+	x |
+	x <- [1..],
+	prime x
+	] !! n) == 0
 
-main = do print [x | x <- [1000000000..9999999999], isDiv x]
+main = print (prop 3)
