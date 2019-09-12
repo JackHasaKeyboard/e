@@ -1,7 +1,11 @@
-main = do
-	let
-		fooBar = [x | x <- [1..999], x `mod` 3 == 0, x `mod` 5 == 0]
+fac n = [
+	x |
+	x <- [2..(div) n 2],
+	((==) ((mod) n x) 0)
+	]
 
-		total = sum fooBar
-
-	print total
+main = print (sum [
+	x |
+	x <- [1..1000],
+	all (== True) (map (\n -> (elem) n (fac x)) [3, 5])
+	])
