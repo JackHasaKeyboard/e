@@ -1,7 +1,16 @@
-prime :: Int -> Bool
-prime k = null [x | x <- [2..k - 1], k `mod` x == 0]
+n = 600851475143
 
-main = do
-	let primeFac = [x | x <- [1..600851475143], prime x, 600851475143 `mod` x == 0]
+prime n = null [
+	x |
+	x <- [2..n - 1],
+	(==) ((mod) n x) 0
+	]
 
-	print primeFac
+fac n x = (==) ((mod) n x) 0
+
+main = print (fst [
+	x |
+	x <- [1..n],
+	prime x,
+	fac n x
+	])
