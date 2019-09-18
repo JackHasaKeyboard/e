@@ -1,8 +1,9 @@
-main = do
-	let
-		sumSq = sum [x ^ 2 | x <- [1..100]]
-		sqSum = sum [1..100] ^ 2
+sumSq = sum [
+	x ^ 2 |
+	x <- [1..100]
+	]
+sqSum = sum [1..100] ^ 2
 
-		d = abs $ sumSq - sqSum
+d = abs (sumSq - sqSum)
 
-	print d
+main = print d
