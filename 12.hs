@@ -1,10 +1,18 @@
-fac :: Int -> [Int]
-fac n = [x | x <- [1..(n `div` 2)], n `mod` x == 0]
+fac n = [
+	x |
+	x <- [1..((div) n 2)],
+	(==) ((mod) n x) 0
+	]
 
-main = do
-	let
-		tri = [sum [1..x] | x <- [1..]]
+tri = [
+	sum [1..x] |
+	x <- [1..]
+	]
 
-		decMult = [x | x <- tri, length (fac x) > 10]
+decMult = [
+	x |
+	x <- tri,
+	(>) (length (fac x)) 10
+	]
 
-	print $ take 10 decMult
+main = print (take 10 decMult)
