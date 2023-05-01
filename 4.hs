@@ -1,5 +1,7 @@
+rev :: Int -> Int
 rev = read . reverse . show
 
+palin :: Int -> Bool
 palin i = i == rev i
 
 main = print (last [
