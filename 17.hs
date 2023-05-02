@@ -22,47 +22,45 @@ size :: [String] -> [Int]
 size word = do
 	return (sum [length x | x <- word])
 
-main = do
-	let word = [
-			[
-				"zero",
-				"one",
-				"two",
-				"three",
-				"four",
-				"five",
-				"six",
-				"seven",
-				"eight",
-				"nine",
-				"ten",
-				"eleven",
-				"twelve",
-				"thirteen",
-				"fourteen",
-				"fifteen",
-				"sixteen",
-				"seventeen",
-				"eighteen",
-				"nineteen"
-			],
-			[
-				"zero",
-				"ten",
-				"twenty",
-				"thirty",
-				"fourty",
-				"fifty",
-				"sixty",
-				"seventy",
-				"eighty",
-				"ninety"
-			]
-		]
+word = [
+	[
+		"zero",
+		"one",
+		"two",
+		"three",
+		"four",
+		"five",
+		"six",
+		"seven",
+		"eight",
+		"nine",
+		"ten",
+		"eleven",
+		"twelve",
+		"thirteen",
+		"fourteen",
+		"fifteen",
+		"sixteen",
+		"seventeen",
+		"eighteen",
+		"nineteen"
+	],
+	[
+			"zero",
+			"ten",
+			"twenty",
+			"thirty",
+			"fourty",
+			"fifty",
+			"sixty",
+			"seventy",
+			"eighty",
+			"ninety"
+	]
+	]
 
-	let
-		dict = [equiv x word | x <- [1..1000]]
+dict = [equiv x word | x <- [1..1000]]
 
-		total = sum [(size (x !! 0)) !! 0 | x <- dict]
+total = sum [(size (x !! 0)) !! 0 | x <- dict]
 
-	print $ equiv 200 word
+main = print $ equiv 200 word
