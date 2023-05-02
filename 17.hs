@@ -19,8 +19,7 @@ equiv n word
 		return spelled
 
 size :: [String] -> [Int]
-size word = do
-	return (sum [length x | x <- word])
+size word = return (sum [length x | x <- word])
 
 word = [
 	[
