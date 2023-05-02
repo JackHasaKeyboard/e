@@ -43,5 +43,4 @@ diagLefts = [diagLeft x | x <- [3..20 - 1]]
 largest :: Ord a => [a] -> a
 largest = foldr1 (\x y -> if x >= y then x else y)
 
-main = do
-	print $ largest $ cols ++ rows ++ diagRights ++ diagLefts
+main = print $ largest $ cols ++ rows ++ diagRights ++ diagLefts
