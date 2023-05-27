@@ -8,7 +8,7 @@ prime n = null [
 
 fac n x = (==) ((mod) n x) 0
 
-main = print (fst [
+main = print (head [
 	x |
 	x <- [1..n],
 	prime x,
