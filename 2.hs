@@ -3,9 +3,10 @@ fib a b = a:fib b (a + b)
 
 fibSeq :: [Int]
 fibSeq = [
-	x | x <- take 4000000 (fib 0 1),
-	x < 4000000
+	x | x <- take roof (fib 0 1),
+	x < roof
 	]
+	where roof = 4000000 :: Int
 
 fibEven :: [Int]
 fibEven = [
