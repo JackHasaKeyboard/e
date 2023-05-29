@@ -1,7 +1,7 @@
 fac n = [
 	x |
-	x <- [2..(div) n 2],
-	(==) ((mod) n x) 0
+	x <- [2..n `div` 2],
+	(==) (n `mod` x) 0
 	]
 
 main = print (sum [
