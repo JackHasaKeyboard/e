@@ -1,7 +1,7 @@
 prime n = null [
 	x |
 	x <- [2..n - 1],
-	(==) ((mod) n x) 0
+	(==) (mod n x) 0
 	]
 
 main = print (sum [
