@@ -4,10 +4,9 @@ fac n = [
 	n `mod` x == 0
 	]
 
-main = do
-	let mult = head [
-		x | x <- [20..],
-		fac x == [1..20]
-		]
+mult = head [
+	x | x <- [20..],
+	fac x == [1..20]
+	]
 
-	print mult
+main = print mult
