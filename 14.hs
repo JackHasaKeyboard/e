@@ -1,8 +1,8 @@
 import Data.List
 
 collatz n
-	| even n = (div) n 2
-	| odd n = (+) ((*) n 3) 1
+	| even n = n `div` 2
+	| odd n = (n * 3) + 1
 
 sequ n
 	| n == 1 = [1]
