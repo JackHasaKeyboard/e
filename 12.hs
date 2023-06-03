@@ -1,7 +1,7 @@
 fac n = [
 	x |
-	x <- [1..((div) n 2)],
-	(==) ((mod) n x) 0
+	x <- [1..(n `div` 2)],
+	(n `mod` x) == 0
 	]
 
 tri = [
@@ -12,7 +12,7 @@ tri = [
 decMult = [
 	x |
 	x <- tri,
-	(>) (length (fac x)) 10
+	(length (fac x)) > 10
 	]
 
 main = print (take 10 decMult)
