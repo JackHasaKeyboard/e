@@ -2,7 +2,7 @@ prime :: Int -> Bool
 prime n = null [
 	x |
 	x <- [2..n - 1],
-	(mod n x) == 0
+	n `mod` x == 0
 	]
 
 main = print (sum [
