@@ -1,3 +1,4 @@
+prime :: Int -> Bool
 prime n = null [
 	x |
 	x <- [1..n `div` 2],
