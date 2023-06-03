@@ -1,3 +1,4 @@
+fac :: Int -> [Int]
 fac n = [
 	x |
 	x <- [2..n `div` 2],
