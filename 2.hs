@@ -3,14 +3,16 @@ fib a b = a:fib b (a + b)
 
 fibSeq :: [Int]
 fibSeq = [
-	x | x <- take roof (fib 0 1),
+	x |
+	x <- take roof (fib 0 1),
 	x < roof
 	]
 	where roof = 4000000 :: Int
 
 fibEven :: [Int]
 fibEven = [
-	x | x <- fibSeq,
+	x |
+	x <- fibSeq,
 	x `mod` 2 == 0
 	]
 
