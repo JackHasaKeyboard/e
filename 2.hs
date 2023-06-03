@@ -14,7 +14,4 @@ fibEven = [
 	x `mod` 2 == 0
 	]
 
-total :: Int
-total = sum fibEven
-
-main = print total
+main = print (sum fibEven)
