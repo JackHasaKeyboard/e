@@ -7,6 +7,4 @@ digit = [
 	x <- show no
 	]
 
-total = sum digit
-
-main = print total
+main = print (sum digit)
