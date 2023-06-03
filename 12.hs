@@ -12,7 +12,7 @@ tri = [
 decMult = [
 	x |
 	x <- tri,
-	(length (fac x)) > 10
+	length (fac x) > 10
 	]
 
 main = print (take 10 decMult)
