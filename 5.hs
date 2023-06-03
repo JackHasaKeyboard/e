@@ -4,9 +4,7 @@ fac n = [
 	n `mod` x == 0
 	]
 
-mult = head [
+main = print (head [
 	x | x <- [20..],
 	fac x == [1..20]
-	]
-
-main = print mult
+	])
