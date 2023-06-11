@@ -11,11 +11,8 @@ tri = [
 	x <- [1..]
 	]
 
-decMult :: [Int]
-decMult = [
+main = print (take 10 [
 	x |
 	x <- tri,
 	length (fac x) > 10
-	]
-
-main = print (take 10 decMult)
+	])
