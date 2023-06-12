@@ -19,10 +19,8 @@ primeFac = [
 	prime x
 	]
 
-equals = [
+main = print [
 	x |
 	x <- permutations primeFac,
 	sum x == 10
 	]
-
-main = print equals
