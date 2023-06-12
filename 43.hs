@@ -1,6 +1,7 @@
 import qualified Data.Set as Set
 import qualified Data.List
 
+no :: Int
 no = 1406357289
 
 digit :: Int -> [Int]
