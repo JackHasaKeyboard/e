@@ -3,9 +3,7 @@ block n = read (concat [
 	x <- [1..n]
 	]) :: Integer
 
-res = product [
+main = print $ product [
 	block (10 ^ x) |
 	x <- [0..6]
 	]
-
-main = print res
