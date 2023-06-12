@@ -24,4 +24,4 @@ equals = [
 	sum x == 10
 	]
 
-main = print (equals)
+main = print equals
