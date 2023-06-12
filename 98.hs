@@ -1,10 +1,10 @@
 conv :: Char -> Int
 conv c
-	| 'C' == 1
-	| 'A' == 2
-	| 'R' == 9
-	| 'E' == 6
+	| c == 'C' = 1
+	| c == 'A' = 2
+	| c == 'R' = 9
+	| c == 'E' = 6
 
 word = "CARE"
 
-main = 
+main = print "asdf"
