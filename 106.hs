@@ -1,7 +1,6 @@
 data Entry = Entry_Char Char | Entry_Int Int
 
-a :: [(Entry)]
-a = [
+main = print [
 	(Entry '-', Entry '-', Entry '-', Entry 427, Entry 668, Entry 495, Entry 377, Entry 678, Entry '-', Entry 177, Entry '-', Entry '-', Entry 870, Entry '-', Entry 869, Entry 624, Entry 300, Entry 609, Entry 131, Entry '-', Entry 251, Entry '-', Entry '-', Entry '-', Entry 856, Entry 221, Entry 514, Entry '-', Entry 591, Entry 762, Entry 182, Entry 56, Entry '-', Entry 884, Entry 412, Entry 273, Entry 636, Entry '-', Entry '-', Entry 774),
 	(Entry '-', Entry '-', Entry 262, Entry '-', Entry '-', Entry 508, Entry 472, Entry 799, Entry '-', Entry 956, Entry 578, Entry 363, Entry 940, Entry 143, Entry '-', Entry 162, Entry 122, Entry 910, Entry '-', Entry 729, Entry 802, Entry 941, Entry 922, Entry 573, Entry 531, Entry 539, Entry 667, Entry 607, Entry '-', Entry 920, Entry '-', Entry '-', Entry 315, Entry 649, Entry 937, Entry '-', Entry 185, Entry 102, Entry 636, Entry 289),
 	(Entry '-', Entry 262, Entry '-', Entry '-', Entry 926, Entry '-', Entry 958, Entry 158, Entry 647, Entry 47, Entry 621, Entry 264, Entry 81, Entry '-', Entry 402, Entry 813, Entry 649, Entry 386, Entry 252, Entry 391, Entry 264, Entry 637, Entry 349, Entry '-', Entry '-', Entry '-', Entry 108, Entry '-', Entry 727, Entry 225, Entry 578, Entry 699, Entry '-', Entry 898, Entry 294, Entry '-', Entry 575, Entry 168, Entry 432, Entry 833),
@@ -43,5 +42,3 @@ a = [
 	(Entry '-', Entry 636, Entry 432, Entry 76, Entry '-', Entry 386, Entry 686, Entry 770, Entry 828, Entry 582, Entry '-', Entry 433, Entry 203, Entry 526, Entry 600, Entry 848, Entry 227, Entry 616, Entry '-', Entry 217, Entry 117, Entry 707, Entry 369, Entry 109, Entry 586, Entry 205, Entry 809, Entry '-', Entry '-', Entry 240, Entry '-', Entry 853, Entry '-', Entry '-', Entry '-', Entry 768, Entry '-', Entry 371, Entry '-', Entry 540),
 	(Entry 774, Entry 289, Entry 833, Entry 257, Entry '-', Entry 381, Entry 239, Entry 722, Entry 711, Entry 468, Entry 933, Entry '-', Entry '-', Entry 17, Entry '-', Entry '-', Entry 148, Entry '-', Entry '-', Entry 853, Entry '-', Entry '-', Entry '-', Entry '-', Entry 264, Entry 194, Entry 260, Entry 947, Entry '-', Entry 752, Entry 147, Entry '-', Entry '-', Entry 343, Entry 112, Entry 273, Entry 344, Entry 680, Entry 540, Entry '-')
 	]
-
-main = print matr
