@@ -24,21 +24,59 @@ no = [
 slice :: (Int, Int) -> [Int] -> [Int]
 slice (floor, roof) ls = take (roof - floor + 1) (drop floor ls)
 
-row n = [slice (x, x + 3) (no !! n) | x <- [0..(20 - 3) - 1]]
-rows = [row x | x <- [0..(20 - 3) - 1]]
+row n = [
+	slice (x, x + 3) (no !! n) |
+	x <- [0..(20 - 3) - 1]
+	]
+rows = [
+	row x |
+	x <- [0..(20 - 3) - 1]
+	]
 
-toCol n = [(no !! x) !! n | x <- [0..(length no - 1)]]
-colRep = [toCol x | x <- [0..(length (no !! 0) - 1)]]
-col n = [slice (x, x + 3) (colRep !! n) | x <- [0..(20 - 3) - 1]]
-cols = [col x | x <- [0..(20 - 3) - 1]]
+toCol n = [
+	(no !! x) !! n |
+	x <- [0..(length no - 1)]
+	]
+colRep = [
+	toCol x |
+	x <- [0..(length (no !! 0) - 1)]
+	]
+col n = [
+	slice (x, x + 3) (colRep !! n) |
+	x <- [0..(20 - 3) - 1]
+	]
+cols = [
+	col x |
+	x <- [0..(20 - 3) - 1]
+	]
 
-diagR (x, y) = [(no !! x) !! y, (no !! (x + 1)) !! (y + 1), (no !! (x + 2)) !! (y + 2), (no !! (x + 3)) !! (y + 3)]
-diagRight n = [diagR (x, n) | x <- [0..(20 - 3) - 1]]
-diagRights = [diagRight x | x <- [0..(20 - 3) - 1]]
+diagR (x, y) = [
+	(no !! x) !! y,
+	(no !! (x + 1)) !! (y + 1), (no !! (x + 2)) !! (y + 2), (no !! (x + 3)) !! (y + 3)
+	]
+diagRight n = [
+	diagR (x, n) |
+	x <- [0..(20 - 3) - 1]
+	]
+diagRights = [
+	diagRight x |
+	x <- [0..(20 - 3) - 1]
+	]
 
-diagL (x, y) = [(no !! x) !! y, (no !! (x + 1)) !! (y - 1), (no !! (x + 2)) !! (y - 2), (no !! (x + 3)) !! (y - 3)]
-diagLeft n = [diagL (x, n) | x <- [0..(20 - 3) - 1]]
-diagLefts = [diagLeft x | x <- [3..20 - 1]]
+diagL (x, y) = [
+	(no !! x) !! y,
+	(no !! (x + 1)) !! (y - 1),
+	(no !! (x + 2)) !! (y - 2),
+	(no !! (x + 3)) !! (y - 3)
+	]
+diagLeft n = [
+	diagL (x, n) |
+	x <- [0..(20 - 3) - 1]
+	]
+diagLefts = [
+	diagLeft x |
+	x <- [3..20 - 1]
+	]
 
 largest :: Ord a => [a] -> a
 largest = foldr1 (\x y -> if x >= y then x else y)
