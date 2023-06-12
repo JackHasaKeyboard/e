@@ -1,6 +1,6 @@
 prop :: Int -> Int
 prop n = sum [
-	x | x <- [1..(n - 1)],
+	x | x <- [1..n - 1],
 	n `mod` x == 0
 	]
 
