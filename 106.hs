@@ -1,6 +1,4 @@
-data Entry =
-  Entry_Char Char |
-  Entry_Int Int
+data Entry = Entry_Char Char | Entry_Int Int
 
 a :: [(Entry)]
 a = [
