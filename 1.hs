@@ -2,7 +2,7 @@ fac :: Int -> [Int]
 fac n = [
 	x |
 	x <- [2..n `div` 2],
-	(n `mod` x) == 0
+	n `mod` x == 0
 	]
 
 main = print $ sum [
