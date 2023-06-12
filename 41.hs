@@ -5,17 +5,17 @@ prime n = null [
 	n `mod` x == 0
 	]
 
-primes = [
+primeSeq = [
 	x |
 	x <- [1..],
 	prime x
 	]
 
 sumPrimes = [
-	sum $ take x primes |
-	x <- primes,
-	prime $ sum $ take x primes,
-	(sum $ take x primes) < 1000
+	sum $ take x primeSeq |
+	x <- primeSeq,
+	prime $ sum $ take x primeSeq,
+	(sum $ take x primeSeq) < 1000
 	]
 
 main = print sumPrimes
