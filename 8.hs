@@ -9,18 +9,18 @@ sumStr str i sum = if i == (Prelude.length str)
 
 		where
 			incI = ((+) i 1)
-			incSum = (+) sum (digitToInt ((!!) str i))
+			incSum = (+) sum (digitToInt (str !! i))
 
 sub str i j = drop i (take j str)
 
-trav str i = if (==) i ((-) (Prelude.length n) ln)
-	then sub n i ((+) i ln)
-	else trav largest ((+) i 1)
+trav str i = if i == ((Prelude.length n) - ln)
+	then sub n i (i + ln)
+	else trav largest (i + 1)
 
 		where
-			current = sumStr (sub n i ((+) i ln))
+			current = sumStr (sub n i (i + ln))
 
-			largest = if (>) largest current
+			largest = if largest > current
 				then current
 				else largest
 
