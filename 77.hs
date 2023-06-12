@@ -7,6 +7,7 @@ prime n = null [
 	n `mod` x == 0
 	]
 
+fac :: Int -> [Int]
 fac n = [
 	x |
 	x <- [1..n],
