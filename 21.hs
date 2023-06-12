@@ -16,10 +16,8 @@ ls = [
 	amic x y
 	]
 
-uniq = nub [
+main = print $ nub [
 	sort x |
 	x <- ls,
 	x /= reverse x
 	]
-
-main = print uniq
