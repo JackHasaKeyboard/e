@@ -1,5 +1,8 @@
 isSq :: Int -> Int -> Bool
-isSq n pow = not $ null [x | x <- [1..n], x ^ pow == n]
+isSq n pow = not $ null [
+	x | x <- [1..n],
+	x ^ pow == n
+	]
 
 ls = [x | x <- [1..]]
 
