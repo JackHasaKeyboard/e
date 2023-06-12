@@ -15,6 +15,6 @@ n n d = [
 	prime x
 	]
 
-s n d = sum (n n d)
+s n d = sum [n, n, d]
 
 main = print $ m 4 1
