@@ -4,6 +4,7 @@ fac n = [
 	n `mod` x == 0
 	]
 
+prime :: Int -> Bool
 prime n = null [
 	x |
 	x <- [2..n `div` 2],

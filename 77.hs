@@ -1,5 +1,6 @@
 import Data.List
 
+prime :: Int -> Bool
 prime n = null [
 	x |
 	x <- [2..(n `div` 2)],
