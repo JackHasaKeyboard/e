@@ -101,4 +101,4 @@ no = [
 	53503534226472524250874054075591789781264330331690
 	]
 
-main = print (take 10 $ show $ sum no)
+main = print $ take 10 $ show $ sum no

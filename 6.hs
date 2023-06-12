@@ -7,4 +7,4 @@ sumSq = sum [
 sqSum :: Int
 sqSum = sum [1..100] ^ 2
 
-main = print (abs (sumSq - sqSum))
+main = print $ abs (sumSq - sqSum)

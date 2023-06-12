@@ -16,4 +16,4 @@ fibEven = [
 	x `mod` 2 == 0
 	]
 
-main = print (sum fibEven)
+main = print $ sum fibEven

@@ -25,4 +25,4 @@ uniq n = [
 	sum (concat (rmDup (map (\x -> fac x) rng))) >= (n * n)
 	]
 
-main = print (head (uniq 4))
+main = print $ head (uniq 4)

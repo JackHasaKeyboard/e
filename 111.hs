@@ -17,4 +17,4 @@ n n d = [
 
 s n d = sum (n n d)
 
-main = print (m 4 1)
+main = print $ m 4 1

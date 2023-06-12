@@ -4,4 +4,4 @@ prime n = null [
 	n `div` x == 0
 	]
 
-main = print (prime 7)
+main = print $ prime 7

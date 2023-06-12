@@ -1,1 +1,1 @@
-main = print (sqrt 2) 
+main = print $ sqrt 2 

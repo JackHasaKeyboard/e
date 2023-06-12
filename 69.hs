@@ -3,4 +3,4 @@ prime n = null [
 	n `mod` x == 0
 	]
 
-main = print (prime 7)
+main = print $ prime 7

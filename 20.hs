@@ -7,4 +7,4 @@ digit n = [
 	x <- show n
 	]
 
-main = print (sum (digit (fac 100)))
+main = print $ sum (digit (fac 100))

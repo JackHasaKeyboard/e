@@ -5,8 +5,8 @@ prime n = null [
 	(n `mod` x) == 0
 	]
 
-main = print ((!!) [
+main = print $ (!!) [
 	x |
 	x <- [1..],
 	prime x
-	] 10001)
+	] 10001

@@ -53,4 +53,4 @@ success = [
 
 det n = show n
 
-main = print (det success !! 0)
+main = print $ det success !! 0

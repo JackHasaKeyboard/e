@@ -8,7 +8,7 @@ sequ n
 	| n == 1 = [1]
 	| otherwise = n : sequ (collatz n)
 
-main = print (tail (sort [
+main = print $ tail (sort [
 	sequ x |
 	x <- [1..999999]
-	]))
+	])

@@ -10,9 +10,9 @@ prime n = null [
 -- 	prime x
 -- 	]
 
-main = print (
+main = print $ 
 	take 21 [
 		x |
 		x <- [2..],
 		prime x
-		])
+		]

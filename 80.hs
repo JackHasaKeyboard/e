@@ -21,4 +21,4 @@ rng = [
 	x <- no \\ takeAway
 	]
 
-main = print (deci (sqrt 7))
+main = print $ deci (sqrt 7)

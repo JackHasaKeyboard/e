@@ -8,4 +8,4 @@ hfc x y = [
 	x
 	]
 
-main = print (divide 3 7)
+main = print $ divide 3 7

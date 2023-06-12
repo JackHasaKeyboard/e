@@ -12,4 +12,4 @@ sq = [
 	prime x
 	]
 
-main = print (permutations sq)
+main = print $ permutations sq

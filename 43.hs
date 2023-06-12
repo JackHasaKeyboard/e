@@ -27,4 +27,4 @@ prop n = (int (slice n)) `mod` ([
 	prime x
 	] !! n) == 0
 
-main = print (prop 3)
+main = print $ prop 3

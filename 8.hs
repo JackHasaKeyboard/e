@@ -24,4 +24,4 @@ trav str i = if (==) i ((-) (Prelude.length n) ln)
 				then current
 				else largest
 
-main = print (trav n 0)
+main = print $ trav n 0
