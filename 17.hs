@@ -58,8 +58,14 @@ word = [
 	]
 	]
 
-dict = [equiv x word | x <- [1..1000]]
+dict = [
+	equiv x word |
+	x <- [1..1000]
+	]
 
-total = sum [(size (x !! 0)) !! 0 | x <- dict]
+total = sum [
+	(size (x !! 0)) !! 0 |
+	x <- dict
+	]
 
 main = print $ equiv 200 word
