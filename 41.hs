@@ -18,5 +18,4 @@ sumPrimes = [
 	(sum $ take x primes) < 1000
 	]
 
-main = do
-	print sumPrimes
+main = print sumPrimes
