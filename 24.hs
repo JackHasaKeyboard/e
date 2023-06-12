@@ -13,5 +13,4 @@ digit = [
 	9
 	]
 
-main = do
-	print $ permutations digit !! 1000000
+main = print $ permutations digit !! 1000000
