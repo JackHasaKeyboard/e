@@ -25,7 +25,6 @@ sq = [
 
 perm = permutations $ cube0 ++ cube1
 
-
 distSq :: ([Int], [Int]) -> [Int]
 distSq (xs0, xs1) = xs0 ++ xs1
 
