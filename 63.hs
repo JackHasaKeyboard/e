@@ -5,5 +5,4 @@ ls = [x | x <- [1..]]
 
 lenAndPow n = (length $ show n) == (isSq n n)
 
-main = do
-	print $ isSq 27 3
+main = print $ isSq 27 3
