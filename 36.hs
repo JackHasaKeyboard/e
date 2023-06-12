@@ -1,3 +1,4 @@
+palin :: String -> Bool
 palin str = str == reverse str
 
 bin 0 = []
