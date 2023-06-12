@@ -10,6 +10,4 @@ walk a
 	| a !! 0 !! 0 == 3 = "asdf"
 	| a !! 0 !! 0 == 7 = "hjkl"
 
-surround matr n 
-
 main = print $ walk matr

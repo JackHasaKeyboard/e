@@ -6,4 +6,4 @@ matr = [
 	[805, 732, 524, 37 331]
 	]
 
-main = print eg
+main = print matr
