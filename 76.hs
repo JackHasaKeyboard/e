@@ -11,4 +11,4 @@ equals xs = [
 	sum xs == x
 	]
 
-main = print $ equals 5
+main = print $ equals [5]

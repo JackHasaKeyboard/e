@@ -1,7 +1,5 @@
 divide n d = n / d
 
-fac
-
 hfc x y = [
 	x |
 	[1..x]
