@@ -1,5 +1,3 @@
-s = sum
+spec b c = sum b /= sum c && length c > length b
 
-spec b c = s b /= s c && length c > length b
-
-main = print $ s [7, 12]
+main = print $ sum [7, 12]
