@@ -8,5 +8,4 @@ diff x y = abs x - y
 
 pair x y = pent x + pent y `elem` pents && abs (pent x - pent y) `elem` pents
 
-main = do
-	print $ pair 4 7
+main = print $ pair 4 7
