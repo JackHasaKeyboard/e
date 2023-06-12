@@ -8,4 +8,4 @@ prime n = null [
 	n `mod` x == 0
 	]
 
-main = print (all (prime) (quad 1 3 7))
+main = print $ all (prime) (quad 1 3 7)
