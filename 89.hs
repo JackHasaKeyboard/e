@@ -1,7 +1,5 @@
 valid :: String -> [String]
 
--- minimal :: String -> Bool
-
 romanCharToInt :: Char -> Int
 romanCharToInt 'I' = 1
 romanCharToInt 'V' = 5
