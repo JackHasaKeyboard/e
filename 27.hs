@@ -8,12 +8,4 @@ prime n = null [
 	n `mod` x == 0
 	]
 
--- asdf = [
--- 	quad n a b |
--- 	n <- [1..10] :: [Int],
--- 	a <- [1..10] :: [Int],
--- 	b <- [1..10] :: [Int],
--- 	all (prime) (quad n a b)
--- 	]
-
 main = print (all (prime) (quad 1 3 7))
