@@ -8,8 +8,8 @@ sumStr str i sum = if i == Prelude.length str
 	else sumStr str incI incSum
 
 		where
-			incI = ((+) i 1)
-			incSum = (+) sum (digitToInt (str !! i))
+			incI = (i + 1)
+			incSum = sum + (digitToInt (str !! i))
 
 sub str i j = drop i (take j str)
 
