@@ -19,7 +19,6 @@ trav str i = if i == (Prelude.length n) - ln
 
 		where
 			curr = sumStr (sub n i (i + ln))
-
 			lg = max curr lg
 
 main = print $ trav n 0
