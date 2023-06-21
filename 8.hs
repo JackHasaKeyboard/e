@@ -13,7 +13,7 @@ sumStr str i total = if i == Prelude.length str
 
 sub str i j = drop i (take j str)
 
-trav str i = if i == ((Prelude.length n) - ln)
+trav str i = if i == (Prelude.length n) - ln
 	then sub n i (i + ln)
 	else trav largest (i + 1)
 
