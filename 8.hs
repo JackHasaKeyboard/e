@@ -20,8 +20,6 @@ trav str i = if i == (Prelude.length n) - ln
 		where
 			current = sumStr (sub n i (i + ln))
 
-			largest = if largest > current
-				then current
-				else largest
+			largest = max current largest
 
 main = print $ trav n 0
