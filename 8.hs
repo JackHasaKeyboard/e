@@ -15,11 +15,11 @@ sub str i j = drop i (take j str)
 
 trav str i = if i == (Prelude.length n) - ln
 	then sub n i (i + ln)
-	else trav largest (i + 1)
+	else trav lg (i + 1)
 
 		where
-			current = sumStr (sub n i (i + ln))
+			curr = sumStr (sub n i (i + ln))
 
-			largest = max current largest
+			lg = max curr lg
 
 main = print $ trav n 0
