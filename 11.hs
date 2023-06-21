@@ -79,6 +79,8 @@ diagLefts = [
 	]
 
 largest :: Ord a => [a] -> a
-largest = foldr1 (\x y -> if x >= y then x else y)
+largest = foldr1 (\x y -> if x >= y
+	then x
+	else y)
 
 main = print $ largest $ cols ++ rows ++ diagRights ++ diagLefts
