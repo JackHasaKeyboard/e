@@ -16,7 +16,7 @@ rmDup :: Eq a => [a] -> [a]
 rmDup = rdHelper []
 	where
 		rdHelper seen [] = seen
-		rdHelper seen (x : xs)
+		rdHelper seen (x:xs)
 			| x `elem` seen = rdHelper seen xs
 			| otherwise = rdHelper (seen ++ [x]) xs
 
