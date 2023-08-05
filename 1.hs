@@ -8,5 +8,5 @@ fac n = [
 main = print $ sum [
 	x |
 	x <- [1..1000],
-	all (== True) (map (\n -> (elem) n (fac x)) [3, 5])
+	all (== True) (map (\n -> n `elem` (fac x)) [3, 5])
 	]
