@@ -1,5 +1,3 @@
-prod = 1000
-
 pythTrip a b c = (a ^ 2) + (b ^ 2) == c ^ 2
 
 main = print $ head [
@@ -9,3 +7,5 @@ main = print $ head [
 	c <- [b + 1..prod],
 	pythTrip a b c && a + b + c == prod
 	]
+
+	where prod = 1000
