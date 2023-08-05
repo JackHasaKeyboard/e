@@ -1,3 +1,5 @@
+import Util
+
 import qualified Data.Set as Set
 import qualified Data.List
 
@@ -15,13 +17,6 @@ slice from = take ((from + 2) - from + 1) (drop from (digit no))
 int :: [Int] -> Int
 int = foldl add 0
    where add num d = 10 * num + d
-
-prime :: Int -> Bool
-prime n = null [
-	x |
-	x <- [2..n `div` 2],
-	n `mod` x == 0
-	]
 
 prop n = (int (slice n)) `mod` ([
 	x |

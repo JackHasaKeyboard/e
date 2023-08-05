@@ -1,11 +1,5 @@
+import Util
 import Data.List
-
-prime :: Int -> Bool
-prime n = null [
-	x |
-	x <- [2..n `div` 2],
-	n `mod` x == 0
-	]
 
 fac :: Int -> [Int]
 fac n = [

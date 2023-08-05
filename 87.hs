@@ -1,8 +1,4 @@
-prime :: Int -> Bool
-prime n = null [
-	x | x <- [1..(n `div` 2) - 1],
-	n `mod` x == 0
-	]
+import Util
 
 pow :: Int -> Int -> Bool
 pow n exp = null [

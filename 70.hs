@@ -1,8 +1,3 @@
-prime :: Int -> Bool
-prime n = null [
-	x |
-	x <- [1..n],
-	n `div` x == 0
-	]
+import Util
 
 main = print $ prime 7
