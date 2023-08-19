@@ -21,6 +21,7 @@ equiv n word
 size :: [String] -> [Int]
 size word = return (sum [length x | x <- word])
 
+word :: [[String]]
 word = [
 	[
 		"zero",
