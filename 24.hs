@@ -1,5 +1,6 @@
 import Data.List
 
+digit : [Int]
 digit = [
 	0,
 	1,
