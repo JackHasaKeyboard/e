@@ -1,3 +1,4 @@
+pythTrip :: Int -> Int -> Int -> Bool
 pythTrip a b c = (a ^ 2) + (b ^ 2) == c ^ 2
 
 main = print $ head [
