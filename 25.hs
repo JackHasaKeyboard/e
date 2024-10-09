@@ -1,5 +1,4 @@
-fib :: Integer -> Integer -> [Integer]
-fib a b = a:fib b (a + b)
+import Util
 
 large = [
 	x | x <- fib 0 1,

@@ -1,5 +1,4 @@
-fib :: Int -> Int -> [Int]
-fib a b = a:fib b (a + b)
+import Util
 
 fibSeq :: [Int]
 fibSeq = [
